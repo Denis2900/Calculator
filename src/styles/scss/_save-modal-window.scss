@@ -1,0 +1,85 @@
+.cover{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    display: none;
+}
+.save-modal-window{
+    position: absolute;
+    width: 90%;
+    display: none;
+    font-family: 'montserrat';
+    border-radius: 40px;
+    padding: 2%;
+    text-align: center;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.save-modal-window__title{
+    font-size: 1.6rem;
+    margin: 3% 0 0 0;
+}
+.save-modal-window__input{
+    width: 100%;
+    margin: 10% 0 0 0 ;
+    input{
+        width: 70%;
+        height: 50px;
+        border: none;
+        padding: 0 5%;
+        border-radius: 20px;
+        background: rgb(225, 225, 225);
+    }
+}
+.save-modal-window__symbol-library{
+    margin: 5% 0;
+    text-align: left;
+    max-width: 100%;
+    padding: 0 10%;
+    a:hover{
+        border-bottom: 1px solid black;
+    }
+}
+.button-block{
+    margin: 10% 0 2% 0;
+    padding: 0 10%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    button{
+        margin: 0 2%;
+    }
+}
+.standart-button{
+    padding: 2%;
+    border-radius: 10px;
+    border: 2px solid rgb(235, 177, 3);
+}
+.animation-show-modal-window{
+    animation: showWindow 1s ease
+}
+.animation-close-modal-window{
+    animation: closeWindow 1s ease;
+}
+@keyframes showWindow{
+    0%{
+        top: -25%;
+    }
+    100%{
+        top: 50%;
+    }
+}
+@keyframes closeWindow {
+    0%{
+        top: 50%;
+    }
+    100%{
+        top:-25%
+    }
+}

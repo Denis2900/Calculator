@@ -1,0 +1,26 @@
+.math-library{
+    display: none;
+    grid-template-columns: repeat(3,1fr);
+}
+.math-library__button{
+    font-size: 2rem;
+    color: black;
+    background: rgb(235, 177, 3);
+    border: 1px solid black;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+.animation-math-library__show{
+    opacity: 1;
+    animation: animation-math-library 2s ease;
+}
+@keyframes animation-math-library {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,41 @@
+.warning-window{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 70%;
+    background: black;
+    display: none;
+    opacity: 1;
+    height: 100px;
+    z-index: 100;
+    font-size: 1rem;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'montserrat';
+}
+.warning-window__title{
+ text-align: center;
+}
+.animation-window{
+    display: flex;
+    animation: animation-window 5s ease;
+}
+@keyframes animation-window{
+    0%{
+        opacity: 0;
+    }
+    50%{
+       opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@media(max-width:500px){
+    .warning-window{
+        width: 90%;
+    }
+}

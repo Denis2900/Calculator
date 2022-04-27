@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/styles/css/reset.css">
+    <link rel="stylesheet" href="./src/styles/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__input">
+                <input type="text" class="mainInput">
+            </div>
+            <div class="header__nav">
+                <div class="header__list">
+                    <button >
+                        <img src="./src/styles/images/header/list.png" alt="list">
+                    </button>
+                </div>
+                <div class="header__math-library">
+                    <button>
+                        <img src="./src/styles/images/header/math_operation.png" alt="math">
+                    </button>
+                </div>
+                <div class="header__history">
+                    <button>
+                        <img src="./src/styles/images/header/history.png" alt="history">
+                    </button>
+                </div>
+                <div class="header__delete-symbol">
+                    <button>
+                        <img src="./src/styles/images/header/delete.png" alt="delete_symbol">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons-block">
+            <div class="buttons-block__window">
+                
+            </div>
+            <div class="button-block__grid">
+                <div class="buttons-block__button deleteInput"><button class="delete">C</button></div>
+                <div class="buttons-block__button"><button>1</button></div>
+                <div class="buttons-block__button"><button>2</button></div>
+                <div class="buttons-block__button math-operation show-modal-window"><button>
+                    <img src="./src/styles/images/header/remember.png" alt="rememder">
+                </button></div>
+                <div class="buttons-block__button"><button>3</button></div>
+                <div class="buttons-block__button"><button>4</button></div>
+                <div class="buttons-block__button"><button>5</button></div>
+                <div class="buttons-block__button math-operation"><button>+</button></div>
+                <div class="buttons-block__button"><button>6</button></div>
+                <div class="buttons-block__button"><button>7</button></div>
+                <div class="buttons-block__button"><button>8</button></div>
+                <div class="buttons-block__button math-operation"><button>-</button></div>
+                <div class="buttons-block__button"><button>9</button></div>
+                <div class="buttons-block__button"><button>0</button></div>
+                <div class="buttons-block__button"><button>+-</button></div>
+                <div class="buttons-block__button math-operation"><button>/</button></div>
+                <div class="buttons-block__button"><button>.</button></div>
+                <div class="buttons-block__button math-operation"><button>()</button></div>
+                <div class="buttons-block__button math-operation"><button>*</button></div>
+                <div class="buttons-block__button math-operation"><button class="setAnswer">=</button></div>
+                <div class="buttons-block__button math-operation"><button>%</button></div>
+                <div class="buttons-block__button math-operation delete-history"><button>
+                    <img src="./src/styles/images/buttons-block/delete-histrory.png" alt="delete-history">
+                </button></div>
+                <div class="buttons-block__button math-operation delete-number"><button>
+                    <img src="./src/styles/images/buttons-block/delete-number.png" alt="delete-number">
+                </button></div>
+           </div>
+        </div>
+        <div class="math-library">
+            <button class="math-library__button" name="cos()">cos</button>
+            <button class="math-library__button" name="sin()">sin</button>
+            <button class="math-library__button" name="tan()">tg</button>
+            <button class="math-library__button" id="radians-or-degree">Rad</button>
+            <button class="math-library__button" name="log((),(2.71))">ln</button>
+            <button class="math-library__button" name="log((),(10))">lg</button>
+            <button class="math-library__button" name="1/">1/x</button>
+            <button class="math-library__button" name="e^()">e<sup>x</sup></button>
+            <button class="math-library__button" name="()^(2)">x<sup>2</sup></button>
+            <button class="math-library__button" name="()^(y)">x<sup>y</sup></button>
+            <button class="math-library__button" name="sqrt()"><img src="./src/styles/images/math-library/root.png" alt="root"></button>
+            <button class="math-library__button" name="abs()">|x|</button>
+            <button class="math-library__button" name="const">pi</button>
+            <button class="math-library__button" name="const">e</button>
+            <button class="math-library__button" name="!">!</button>
+        </div>
+        <div class="cover">
+            <div class="save-modal-window">
+                <div class="save-modal-window__title">
+                    Сохранить переменную?
+                </div>
+                <div class="save-modal-window__input">
+                    <input type="text" placeholder="Назвавние переменной">
+                </div>
+                <div class="save-modal-window__symbol-library">
+                    <a href="#">
+                        Другие символы
+                    </a>
+                </div>
+                <div class="button-block">
+                    <button class="standart-button standart-button__save">сохранить</button>
+                    <button class="standart-button standart-button__close">отмена</button>
+                </div>
+            </div>
+        </div>
+        <div class="symbols-library">
+           <div class="symbols-library__container">
+                <div class="symbols-library__title">
+                    Дополнительные символы
+                </div>
+                <div class="symbols-library__block">
+                    <div class="symbols-library__symbol">&#945</div>
+                    <div class="symbols-library__symbol">&#946</div>
+                    <div class="symbols-library__symbol">&#947</div>
+                    <div class="symbols-library__symbol">&#948</div>
+                    <div class="symbols-library__symbol">&#949</div>
+                    <div class="symbols-library__symbol">&#950</div>
+                    <div class="symbols-library__symbol">&#951</div>
+                    <div class="symbols-library__symbol">&#952</div>
+                    <div class="symbols-library__symbol">&#953</div>
+                    <div class="symbols-library__symbol">&#954</div>
+                    <div class="symbols-library__symbol">&#955</div>
+                    <div class="symbols-library__symbol">&#956</div>
+                    <div class="symbols-library__symbol">&#957</div>
+                    <div class="symbols-library__symbol">&#958</div>
+                    <div class="symbols-library__symbol">&#959</div>
+                    <div class="symbols-library__symbol">&#960</div>
+                    <div class="symbols-library__symbol">&#961</div>
+                    <div class="symbols-library__symbol">&#962</div>
+                    <div class="symbols-library__symbol">&#963</div>
+                    <div class="symbols-library__symbol">&#964</div>
+                    <div class="symbols-library__symbol">&#965</div>
+                    <div class="symbols-library__symbol">&#966</div>
+                    <div class="symbols-library__symbol">&#967</div>
+                    <div class="symbols-library__symbol">&#968</div>
+                    <div class="symbols-library__symbol">&#969</div>
+                </div>
+                <div class="symbols-library__input-block">
+                    <div>
+                        <div class="symbols-library__input">
+                            <input type="text" placeholder="Основной текст" class="input-main-text">
+                        </div>
+                        <div class="symbols-library__input">
+                             <input type="text" placeholder="Индекс" class="input-index-text">
+                        </div>
+                        <div class="symbols-library__input">
+                             <input type="text" placeholder="Степень" class="input-degree-text">
+                        </div>
+                    </div>
+                    <div class="symbols-library__answer answer">
+                        <div class="answer__title">
+                            Ответ
+                        </div>
+                        <div class="answer__block">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="button-block">
+                    <button class="standart-button standart-button__save">сохранить</button>
+                    <button class="standart-button standart-button__close">отмена</button>
+                </div>
+            </div>
+        </div>
+        <div class="warning-window">
+            <div class="warning-window__title">
+                
+            </div>
+        </div>
+        <div class="local-cover">
+            <div class="symbols_library__window window">
+                <div class="widdow__title">
+                    Переменная с таким именем уже существует, заменить переменную?
+                </div>
+                <div class="button-block">
+                    <button class="standart-button standart-button__change">изменить</button>
+                    <button class="standart-button standart-button__cancel">отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./dist/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'lobster';
+    src: url(../fonts/lobster/Lobster-Regular.ttf);
+}
+.buttons-block{
+    position: relative;
+}
+.button-block__grid{
+    display: grid;
+    font-family: 'lobster';
+    padding: 2% 0;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    grid-row-gap: 20px;
+    background: black;
+    button{
+        width: 70px;
+        font-family: 'lobster';
+        height: 70px;
+        border-radius: 50%;
+        background: orange;
+        border: none;
+        font-size: 2rem;
+    }
+}
+
+.small-buttons{
+    margin-left: 50%;
+    button{
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.animation-moving-block-right{
+    animation: animation-moving-right 1s ease;
+}
+.animation-moving-block-left{
+    animation: animation-moving-left 1s ease;
+}
+.buttons-block__window{
+    overflow: auto;
+    background: #ccc;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    display: none;
+}
+.math-operation{
+    button{
+        background: rgb(45, 152, 182); ;
+        color: white;
+        font-family:Arial, Helvetica, sans-serif
+    }
+}
+.deleteInput{
+    button{
+      background: rgb(170, 1, 1);
+    }
+}
+.window-block__text{
+    margin: 5% 2%;
+    font-family: 'montserrat';
+    font-size: 1.2rem;
+    max-width: 90%;
+    width: 100%;
+    border: 1px solid black;
+}
+.buttons-block__item{
+    margin: 5% 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+}
+.buttons{
+    text-align: center;
+}
+.items__button{
+    padding: 1%;
+    border: 2px solid rgb(235, 177, 3);
+    background: #fff;
+    font-size: 0.8rem;
+    margin: 2%;
+    border-radius: 7px;
+}
+.animation-buttons{
+    animation: live-button 0.5s ease
+}
+.animation-show-list{
+    animation: animation-show-window-list 1s ease;
+}
+.animation-close-list{
+    animation: animation-close-window-list 1s ease;
+}
+@keyframes live-button{
+    50%{
+      font-size: 1rem;
+    }
+    100%{
+      font-size:2rem;
+    }
+}
+@keyframes animation-show-window-list{
+    0%{
+        right:100%;
+    }
+    100%{
+        right:50%;
+    }
+}
+@keyframes animation-moving-left{
+    0%{
+        margin-left: 0%;
+    }
+    100%{
+        margin-left: 50%;
+    }
+}
+@keyframes animation-moving-right{
+    0%{
+        margin-left: 50%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+}
+@keyframes animation-close-window-list{
+    0%{
+        right:50%;
+    }
+    100%{
+        right:100%;
+    }
+}
+@media(max-width:350px){
+    .button-block__grid{
+        button{
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+        }
+    }
+    .small-buttons{
+        button{
+            width: 30px;
+            height: 30px;
+            font-size: 1.1rem;
+        }
+    }
+    .window-block__text{
+        font-size: 1rem;
+    }
+}
+@media(max-width:250px){
+    .button-block__grid{
+        button{
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+        }
+    }
+    .small-buttons{
+        button{
+            width: 25px;
+            height: 25px;
+            font-size: 1rem;
+        }
+    }
+}
