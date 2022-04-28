@@ -515,6 +515,7 @@
   display: grid;
   font-size: 1.5rem;
   grid-gap: 15px;
+  position: relative;
   -ms-grid-columns: (minmax(30px, 1fr))[5];
       grid-template-columns: repeat(5, minmax(30px, 1fr));
 }
@@ -625,6 +626,17 @@
   .symbols-library__answer {
     margin: 2% auto;
   }
+}
+
+.animation-symbols-library {
+  padding: 2% 10%;
+  z-index: 10;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media (max-width: 300px) {

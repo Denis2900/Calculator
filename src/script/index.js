@@ -140,6 +140,7 @@ const showSymbolLibrary = ()=>{
     answer.innerHTML = `${inputMainText.value}<sub>${inputIndexText.value}</sub><sup>${inputDegreeText.value}</sup>`
     const addListenerInSymbol = (event)=>{
         if(activeInput){
+            animationWindow(event.currentTarget,'animation-symbols-library',1000)
             activeInput.value +=event.target.textContent
             answer.innerHTML = `<span>${inputMainText.value}</span><sub>${inputIndexText.value}</sub><sup>${inputDegreeText.value}</sup>`
         }
@@ -230,9 +231,18 @@ const showList = (event)=>{
         buttonBlockGrid.classList.remove('small-buttons')
         animationWindow(buttonBlockWindow,'animation-close-list',1000,'close')
         animationWindow(buttonBlockGrid,'animation-moving-block-right',1000)
+        let i = 0
         while(buttonBlockWindow.childNodes){
-            let children = buttonBlockWindow.childNodes[0]
-            buttonBlockWindow.removeChild(children) 
+            let children = buttonBlockWindow.childNodes[i]
+            if(children){
+              buttonBlockWindow.removeChild(children)   
+            }
+            else if(buttonBlockWindow.childNodes[i+1]){
+                i++
+            }
+            else{
+                break
+            }
         }
     }
     else{
